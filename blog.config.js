@@ -1,8 +1,8 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
-  AUTHOR: 'tangly1024', // 作者
+  AUTHOR: 'Myyy', // 作者
   BIO: '一个普通的干饭人🍚', // 作者简介
-  LINK: 'https://tangly1024.com', // 网站地址
+//   LINK: 'https://tangly1024.com', // 网站地址
   AVATAR: '/avatar.png', // 个人头像 默认取public目录下的avatar.png
   KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
@@ -12,7 +12,7 @@ const BLOG = {
 
   FACEBOOK_PAGE_ID: process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || '', // Facebook Page ID 來啟用 messenger 聊天功能
   FACEBOOK_APP_ID: process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || '', // Facebook App ID 來啟用 messenger 聊天功能
-  FACEBOOK_PAGE: process.env.NEXT_PUBLIC_FACEBOOK_PAGE || 'https://www.facebook.com/tw.andys.pro', // Facebook Page 的連結
+  FACEBOOK_PAGE: process.env.NEXT_PUBLIC_FACEBOOK_PAGE || '', // Facebook Page 的連結
 
   THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 主题， 支持 ['next','hexo',"fukasawa','medium']
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
@@ -49,7 +49,7 @@ const BLOG = {
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
   WIDGET_PET_LINK:
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
-  WIDGET_PET_SWITCH_THEME: true, // 点击宠物挂件切换博客主题
+  WIDGET_PET_SWITCH_THEME: false, // 点击宠物挂件切换博客主题
 
   // 评论互动 可同时开启多个支持 GISCUS CUSDIS UTTERRANCES GITALK
 
@@ -115,9 +115,9 @@ const BLOG = {
   ADSENSE_GOOGLE_ID: process.env.NEXT_PUBLIC_ADSENSE_GOOGLE_ID || '', // 谷歌广告ID e.g ca-pub-xxxxxxxxxxxxxxxx
 
   // 无关紧要的配置
-  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'Myyy BLOG', // 站点标题 ，被notion中的页面标题覆盖
   DESCRIPTION:
-    process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个由NotionNext生成的站点', // 站点描述，被notion中的页面描述覆盖
+    process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个刚出生的站点', // 站点描述，被notion中的页面描述覆盖
 
   isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   VERSION: '3.0.0' // 版本号
